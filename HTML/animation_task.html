@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            width: 100%;
+            height: 100%;
+            background-color: darkorange;
+            justify-content: center;
+            justify-items: center;
+            align-items: center; 
+            
+        }
+        .b{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            border-radius: 50%;
+            position: relative;
+            top: 110px;
+            margin-left: 15px;   
+            
+        }
+        .a{
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            top: 120px;
+            margin-left: 8px;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: yel;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+  
+        }
+        @keyframes yel{
+
+            from{
+                height:-100px;
+                width: -100px;
+                box-shadow: 8px 8px 6px 5px yellow;
+            }
+            to{
+                height: 170px;
+                width: 170px;
+                box-shadow: 8px 8px 6px 40px yellow;
+         
+                }
+    }
+    
+
+    
+
+    </style>
+</head>
+<body>
+    <main>
+    
+    <div class = "main"> 
+        <div class="a"></div>
+        <div class = "b"></div>
+    </div>
+</main>
+
+</body>
+</html>

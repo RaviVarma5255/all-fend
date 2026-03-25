@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* adject +  */
+h2+p+p{
+    color: aquamarine;
+}
+div+p{
+    color: tomato;
+}
+div+p+h1{
+    color: chocolate;
+}
+h3+h4{
+    color: skyblue;;
+}
+/* .r{
+    color: rgb(213, 213, 16);
+} */
+#r,.r{
+    background-color: teal;
+}
+.r{
+    color: tomato;
+}
+#i{
+    color: rgb(71, 95, 255);
+}
+h1 ~ p{
+    color: rgb(255, 0, 0);
+}
+</style>
+</head>
+<body>
+
+<h2 class="r">Heading</h2>
+<p>This paragraph is immediately after h2 → gets red</p>
+<p>This paragraph is also after h2 but NOT immediately → no effect</p>
+<div> hello </div>
+<p>ok vachindi</p>
+<div>
+    <h1>heloo</h1>
+    <p>sai raj</p>
+    <h1 id="r">10k coders</h1>
+</div>
+<h3 id="i">monday</h3>
+<h4 id="i">wednesday</h4>
+<h2>Heading</h2>
+<p>First paragraph → selected by general sibling</p>
+<p>Second paragraph → also selected</p>
+<p>Third paragraph → also selected</p>
+<div>
+    <p>names</p>
+    <div>
+        <h1> css</h1>
+        <p>color</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Example</title>
+    <style>
+        /* Descendant combinator (space) */
+        div p {
+            color: blue;
+        }
+
+        /* Child combinator (>) */
+        div > p {
+            font-weight: bold;
+        }
+
+        /* Adjacent sibling combinator (+) */
+        h2 + p {
+            background-color: yellow;
+        }
+
+        /* General sibling combinator (~) */
+        p ~ p {
+            border: 2px dashed red;
+        }
+
+        /* Styling containers for clarity */
+        div {
+            padding: 10px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Section 1</h2>
+        <p>This paragraph is a child and descendant of div (blue & bold).</p>
+        <p>This is another child paragraph of div.</p>
+        <span>
+            <p>This paragraph is nested inside span (descendant of div, blue only).</p>
+        </span>
+    </div>
+
+    <h2>Section 2</h2>
+    <p>This paragraph comes immediately after H2 (yellow background & red border).</p>
+    <p>This paragraph is a general sibling of H2 (red border only).</p>
+    <p>This paragraph is also a general sibling of H2 (red border only).</p>
+</body>
+</html>

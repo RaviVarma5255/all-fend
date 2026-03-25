@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saradha</title>
+    <style>
+        .parent{
+            display: flex;
+            flex-wrap:wrap ;
+            gap: 10px;
+        }
+    
+        .head,.foot{
+            flex: 0 0 100%; 
+            background: tomato;
+
+        }
+       
+       
+    
+
+         .side{
+            flex: 0 0  25%; 
+  background: lightblue;
+        }
+
+         .center{
+            flex: 0 0 70%; 
+  background: lightgreen;}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="head">header</div>
+        <div class="center">center</div>
+        <div class="side">silde</div>
+        <div class="foot">footer</div>
+    </div>
+</body>
+</html>

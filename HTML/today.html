@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main>.hi{
+            color: bisque;
+        }
+        .main> .hi{
+            background-color: brown;
+        }
+        /* for hi 1 child */
+        /* but ikkada rendu h1's unai kada so adject ivali  */
+        /* daniki class or id ichukovachu */
+        .main>.hi+h1{
+            text-align: center;
+        }
+        /* 2 descendant */
+        .main h1+h1{
+            color: blue;
+        }
+        /* 3 adjacent */
+        /* + a use cheyali but side by side undav */
+        .main>h1+h1{
+            background-color: chartreuse;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        /* 4 genral */
+        /* genearl kuda avadhu  */
+        .main>h1+h1{
+            border-radius: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .hi~h2{
+            color: violet;
+        }
+        h1 ~ h2{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="hi"> Combinators selectors </h1>
+        <h1>HI</h1>
+        <h2>Hlo</h2>
+        <div class="parent">
+            <h1 class="hi">54r batch</h1>
+        </div>
+        <h2>this is selectors</h2>
+        <div class="parent2">
+        <h1>ji</h1>
+        <h2>jai</h2>
+            <h2>pm</h2>
+            <h3>color</h3>
+        </div>
+        <h4>backgoundcolor</h4>
+        <h2>huu</h2>
+    </div>
+    <div class="main2">
+        <h3>hahah</h3>
+</body>
+</html> 
